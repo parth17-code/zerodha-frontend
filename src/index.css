@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar{
+  background-color: white;
+}
+
+.nav-link{
+  margin-left: 40px;
+}
+
+.smallprint{
+  color: #9b9b9b;
+  font-size: .65rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.footer-graveyard{
+  font-size: .8rem;
+  color: #9b9b9b;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: inline-block; 
+  margin-bottom: 10px;
+  text-decoration: none; 
+  color: #666;
+  font-weight: 400;
+}
+
+.support-portal{
+  height: 212px;
+  background-color: #f6f6f6;
+}
+
+.form-control{
+  border-left: none !important;
+}
+
+.featured-content{
+  height:"35%";
+  background-color:"#fff4e6";
+  border-left: solid;
+}
+
