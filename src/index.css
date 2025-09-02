@@ -57,3 +57,44 @@ code {
   border-left: solid;
 }
 
+.login-link:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  border-radius: 4px; /* optional, looks nicer */
+  padding: 2px 6px;   /* optional, gives some spacing */
+}
+
+.signup-link:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  border-radius: 4px; /* optional, looks nicer */
+  padding: 2px 6px;   /* optional, gives some spacing */
+}
+
+.acop-steps{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+
+.faq-dropdown{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.faq {
+  border: 2px solid transparent; /* keeps layout stable */
+  border-radius: 8px;            /* smooth edges (optional) */
+  transition: border-color 0.2s ease-in;
+}
+
+.faq:hover {
+  border-color: #0d6efd; /* highlight full div */
+}
+
+
+
