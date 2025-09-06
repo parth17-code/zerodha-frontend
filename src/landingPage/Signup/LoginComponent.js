@@ -29,7 +29,7 @@ function LoginComponent({onSwicth}) {
         console.log("Login successful!");
         setTimeout(() => {
           window.location.href =  DASHBOARD_URL;
-        }, 3000) 
+        }, 1000) 
       } else {
         console.log(res.data.message);
       }
