@@ -29,7 +29,7 @@ function LoginComponent({onSwicth}) {
         console.log("Login successful!");
         setTimeout(() => {
           window.location.href = "https://zerodha-dashboard-green.vercel.app";
-        }, 1000) 
+        }, 5000) 
       } else {
         console.log(res.data.message);
       }
