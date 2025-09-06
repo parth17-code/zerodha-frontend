@@ -28,7 +28,7 @@ function LoginComponent({onSwicth}) {
       if (res.data.success) {
         console.log("Login successful!");
         setTimeout(() => {
-          window.location.href =  DASHBOARD_URL;
+          window.location.href = `${DASHBOARD_URL}`;
         }, 1000) 
       } else {
         console.log(res.data.message);
