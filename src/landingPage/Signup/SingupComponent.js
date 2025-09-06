@@ -2,6 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 
 function SignupComponent({onSwicth}) {
+
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL;
+
   const [formdata, setFormdata] = useState({
     username: "",
     email: "",
@@ -16,7 +20,7 @@ function SignupComponent({onSwicth}) {
   const handleSubmitFormClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://zerodha-backend-qvo7.onrender.com/signup", {
+      const res = await axios.post(`${BACKEND_URL}/signup`, {
         Username: formdata.username,
         email: formdata.email,
         password: formdata.password,
@@ -26,7 +30,7 @@ function SignupComponent({onSwicth}) {
       if (res.data.success) {
         console.log("Signup successful!");
         setTimeout(() => {
-          window.location.href = "https://zerodha-dashboard-green.vercel.app";
+          window.location.href = "DASHBOARD_URL";
         }, 2000)
       } else {
         console.log(res.data.message);

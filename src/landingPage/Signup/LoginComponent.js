@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function LoginComponent({onSwicth}) {
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL;
+
+
   const [formdata, setFormdata] = useState({
     email: "",
     password: "",
@@ -16,7 +20,7 @@ function LoginComponent({onSwicth}) {
     console.log("Login form submitted", formdata);
 
     try {
-      const res = await axios.post("https://zerodha-frontend-4blv.vercel.app/login", {
+      const res = await axios.post(`${BACKEND_URL}/login`, {
         email: formdata.email,
         password: formdata.password,
       },{withCredentials:true});
@@ -24,7 +28,7 @@ function LoginComponent({onSwicth}) {
       if (res.data.success) {
         console.log("Login successful!");
         setTimeout(() => {
-          window.location.href = "https://zerodha-dashboard-green.vercel.app";
+          window.location.href =  DASHBOARD_URL;
         }, 1000) 
       } else {
         console.log(res.data.message);
