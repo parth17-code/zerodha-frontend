@@ -30,7 +30,7 @@ function SignupComponent({onSwicth}) {
       if (res.data.success) {
         console.log("Signup successful!");
         setTimeout(() => {
-          window.location.href = `${DASHBOARD_URL}`;
+          window.location.href = "https://zerodha-dashboard-green.vercel.app";
         }, 1000)
       } else {
         console.log(res.data.message);
