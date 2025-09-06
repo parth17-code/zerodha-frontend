@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function Hero() {
     const navigate = useNavigate();
     const handleSignupClick = ()=>{
-        navigate('signup');
+        navigate('/signup');
     }
 
     return ( 

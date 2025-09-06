@@ -16,7 +16,7 @@ function LoginComponent({onSwicth}) {
     console.log("Login form submitted", formdata);
 
     try {
-      const res = await axios.post("http://localhost:3002/login", {
+      const res = await axios.post("https://zerodha-frontend-4blv.vercel.app/login", {
         email: formdata.email,
         password: formdata.password,
       },{withCredentials:true});
@@ -24,7 +24,7 @@ function LoginComponent({onSwicth}) {
       if (res.data.success) {
         console.log("Login successful!");
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = "https://zerodha-dashboard-green.vercel.app";
         }, 1000) 
       } else {
         console.log(res.data.message);
