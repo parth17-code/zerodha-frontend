@@ -4,7 +4,7 @@ function OpenAccount() {
     const navigate = useNavigate();
 
     const handleSignupClick = ()=>{
-        navigate('https://zerodha-frontend-4blv.vercel.app/')
+        navigate('/signup')
     }
     return ( 
         <div className="container p-5 mb-5">

@@ -16,7 +16,7 @@ function SignupComponent({onSwicth}) {
   const handleSubmitFormClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://zerodha-frontend-4blv.vercel.app/signup", {
+      const res = await axios.post("https://zerodha-backend-qvo7.onrender.com/signup", {
         Username: formdata.username,
         email: formdata.email,
         password: formdata.password,
